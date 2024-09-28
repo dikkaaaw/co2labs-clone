@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         generalsans: ["General Sans", "sans-serif"],
+        orbitron: ["Orbitron", "sans-serif"],
       },
     },
   },
