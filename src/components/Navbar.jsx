@@ -1,15 +1,9 @@
-import {
-  useEffect,
-  useState,
-} from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Logo from "../assets/logo.png";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] =
-    useState(false);
-  const [isScrolled, setIsScrolled] =
-    useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -24,37 +18,28 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener(
-      "scroll",
-      handleScroll
-    );
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener(
-        "scroll",
-        handleScroll
-      );
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <nav className="">
+    <nav>
       <div
-        className={`fixed top-0 z-20 flex items-center justify-between w-screen px-10 py-2 lg:flex-row lg:px-28 transition-shadow duration-300 ${
+        className={`fixed top-0 z-20 bg-white flex items-center justify-between w-screen px-10 py-2 lg:flex-row lg:px-28 transition-shadow duration-300 ${
           isScrolled ? "shadow-lg" : ""
         } `}
       >
-        <Link to="/home">
+        <a href="/">
           <img
             className="w-16 cursor-pointer"
             src={Logo}
-            alt=""
+            alt="Logo"
           />
-        </Link>
-        <div className="hidden gap-10 space-x-4 md:flex">
-          <a
-            href="#"
-            className="text-xl font-medium text-gray"
-          >
+        </a>
+        <div className="hidden gap-10 space-x-4 md:hidden lg:flex">
+          <a href="#" className="text-xl font-medium text-gray">
             Our Services
             <svg
               className="inline-block w-4 h-4 ml-3"
@@ -72,30 +57,30 @@ const Navbar = () => {
             </svg>
           </a>
           <a
-            href="#"
+            href="#aboutUs"
             className="text-xl font-medium text-gray"
           >
             About Us
           </a>
           <a
-            href="#"
+            href="#portfolio"
             className="text-xl font-medium text-gray"
           >
             Portfolio
           </a>
           <a
-            href="#"
+            href="#contactUs"
             className="text-xl font-medium text-gray"
           >
             Contact
           </a>
         </div>
-        <div className="hidden md:flex">
-          <button className="bg-[#153147] rounded-md font-medium text-white py-2 px-4 hover:shadow-lg">
+        <div className="hidden md:hidden lg:flex">
+          <button className="bg-[#153147] rounded-md font-medium text-white py-2 px-4 transition-all duration-150 hover:shadow-[0_4px_20px_rgba(0,0,0,0.6)] hover:scale-110">
             Get Started Today!
           </button>
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={toggleMenu}
             className="text-gray focus:outline-none"
@@ -151,8 +136,7 @@ const Navbar = () => {
                 Website Maintenance
               </li>
               <li className="my-3 ml-5 text-lg underline">
-                Website & App
-                Development
+                Website & App Development
               </li>
               <li className="my-3 ml-5 text-lg underline">
                 IT Support
@@ -162,20 +146,20 @@ const Navbar = () => {
               </li>
             </ul>
             <a
-              href="#"
-              className="block p-3 mt-3 mb-3 text-lg font-medium text-black rounded-md bg-slate-100 text-gray hover:underline bg-"
+              href="#aboutUs"
+              className="block p-3 mt-3 mb-3 text-lg font-medium text-black rounded-md bg-slate-100 text-gray hover:underline"
             >
               About Us
             </a>
             <a
-              href="#"
-              className="block p-3 mb-3 text-lg font-medium text-black rounded-md bg-slate-100 text-gray hover:underline bg-"
+              href="#portfolio"
+              className="block p-3 mb-3 text-lg font-medium text-black rounded-md bg-slate-100 text-gray hover:underline"
             >
               Portfolio
             </a>
             <a
-              href="#"
-              className="block p-3 mb-3 text-lg font-medium text-black rounded-md bg-slate-100 text-gray hover:underline bg-"
+              href="#contactUs"
+              className="block p-3 mb-3 text-lg font-medium text-black rounded-md bg-slate-100 text-gray hover:underline"
             >
               Contact Us
             </a>
