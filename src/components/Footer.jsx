@@ -5,7 +5,7 @@ const Footer = () => {
       id="footer"
     >
       <div className="container flex flex-col items-center justify-between mx-auto md:flex-row">
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between px-6 lg:px-0">
           <h2 className="mb-2 text-4xl font-bold">
             Let’s Grow With CO2 Labs
           </h2>
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-start px-20 mt-20 gap-14 lg:ml-10 lg:mt-0">
+        <div className="flex flex-wrap justify-start mt-20 px-14 lg:px-18 gap-14 lg:ml-10 lg:mt-0">
           <ul className="text-[#888] list-disc text-start">
             <h3 className="text-lg font-bold text-white">
               Services
@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="container flex flex-col-reverse gap-2 px-16 mx-auto mt-6 text-sm lg:px-0 text-start md:flex-row md:justify-between">
+      <div className="container flex flex-col-reverse gap-2 mx-auto mt-6 text-sm px-14 lg:px-0 text-start md:flex-row md:justify-between">
         <p className="text-[#888] text-md">
           ©2024 CO2 Labs. All Right Reserved
         </p>
