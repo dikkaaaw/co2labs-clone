@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -7,6 +8,10 @@ import {
 import { Homepage, AboutUs, Portfolio, Contact } from "./pages";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <Router>
       <Routes>
