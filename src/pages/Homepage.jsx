@@ -87,7 +87,7 @@ const Homepage = () => {
                 Prevent downtime,..
               </h4>
               <a
-                href="#"
+                href="/"
                 className="text-xl font-semibold underline hover:text-blue-800"
               >
                 View More
@@ -117,7 +117,7 @@ const Homepage = () => {
                 to seamless..
               </h4>
               <a
-                href="#"
+                href="/"
                 className="text-xl font-semibold underline hover:text-blue-800"
               >
                 View More
@@ -147,7 +147,7 @@ const Homepage = () => {
                 maintenance..
               </h4>
               <a
-                href="#"
+                href="/"
                 className="text-xl font-semibold underline hover:text-blue-800"
               >
                 View More
@@ -177,7 +177,7 @@ const Homepage = () => {
                 hosting to plugins, we provid..
               </h4>
               <a
-                href="#"
+                href="/"
                 className="text-xl font-semibold underline hover:text-blue-800"
               >
                 View More
@@ -199,17 +199,39 @@ const Homepage = () => {
             </h3>
           </div>
           <div className="flex flex-col lg:flex-row">
-            <div className="flex flex-col w-full bg-[#edeae3] h-60 cursor-pointer lg:w-1/3">
-              <h1 className="justify-center mt-12 ml-10 text-3xl font-bold font-generalsans">
-                Assessment <br />
-                <span className="text-2xl font-medium">
-                  {" "}
-                  & Insight Gathering
-                </span>
-              </h1>
+            <div className="relative flex flex-col w-full bg-[#edeae3] cursor-pointer lg:w-1/3 group transition-all duration-300">
+              <div className="p-6">
+                <h1 className="text-3xl font-bold font-generalsans">
+                  Assessment <br />
+                  <span className="text-2xl font-medium">
+                    & Insight Gathering
+                  </span>
+                </h1>
+                <div className="overflow-hidden transition-all duration-300 ease-in-out max-h-0 group-hover:max-h-96">
+                  <p className="mt-4 font-medium text-black">
+                    Our process begins with an initial
+                    consultation to gather insights into your
+                    business needs and challenges. We work
+                    closely with your team to understand your
+                    objectives and gather all necessary
+                    information.
+                  </p>
+                  <ul className="pl-4 mt-2 font-medium text-black list-disc">
+                    <li>Initial consultation meetings</li>
+                    <li>
+                      Gathering business and technical
+                      requirements
+                    </li>
+                    <li>Conducting stakeholder interviews</li>
+                    <li>
+                      Understanding long-term business goals
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div className="flex justify-center mt-4">
                 <svg
-                  className="mt-6"
+                  className="transition-transform duration-300 rotate-180 group-hover:rotate-0 group-hover:mb-4"
                   width="59"
                   height="23"
                   viewBox="0 0 59 23"
@@ -223,21 +245,40 @@ const Homepage = () => {
                     strokeMiterlimit="10"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  ></path>
+                  />
                 </svg>
               </div>
             </div>
-            <div className="flex flex-col w-full bg-[#adb8ba] h-60 cursor-pointer lg:w-1/3">
-              <h1 className="justify-center mt-12 ml-10 text-3xl font-bold font-generalsans">
-                Assessment <br />
-                <span className="text-2xl font-medium">
-                  {" "}
-                  & Insight Gathering
-                </span>
-              </h1>
+
+            <div className="relative flex flex-col w-full bg-[#adb8ba] cursor-pointer lg:w-1/3 group transition-all duration-300">
+              <div className="p-6">
+                <h1 className="text-3xl font-bold font-generalsans">
+                  Customization <br />
+                  <span className="text-2xl font-medium">
+                    & Strategic Planning
+                  </span>
+                </h1>
+                <div className="overflow-hidden transition-all duration-300 ease-in-out max-h-0 group-hover:max-h-screen">
+                  <p className="mt-4 font-medium text-black list-disc">
+                    We then develop a strategic plan and design
+                    tailored solutions that address your specific
+                    needs. This involves detailed planning,
+                    resource allocation, and design of bespoke
+                    solutions that align with your goals.
+                  </p>
+                  <ul className="pl-4 mt-2 font-medium text-black list-disc">
+                    <li>Strategic planning sessions</li>
+                    <li>Solution design and prototyping</li>
+                    <li>Resource and timeline planning</li>
+                    <li>
+                      Risk assessment and mitigation planning
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div className="flex justify-center mt-4">
                 <svg
-                  className="mt-6"
+                  className="transition-transform duration-300 rotate-180 group-hover:rotate-0 group-hover:mb-4"
                   width="59"
                   height="23"
                   viewBox="0 0 59 23"
@@ -251,21 +292,43 @@ const Homepage = () => {
                     strokeMiterlimit="10"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  ></path>
+                  />
                 </svg>
               </div>
             </div>
-            <div className="flex flex-col w-full bg-[#edeae3] h-60 cursor-pointer lg:w-1/3">
-              <h1 className="justify-center mt-12 ml-10 text-3xl font-bold font-generalsans">
-                Assessment <br />
-                <span className="text-2xl font-medium">
-                  {" "}
-                  & Insight Gathering
-                </span>
-              </h1>
+
+            <div className="relative flex flex-col w-full bg-[#edeae3] cursor-pointer lg:w-1/3 group transition-all duration-300">
+              <div className="p-6">
+                <h1 className="text-3xl font-bold font-generalsans">
+                  Execution <br />
+                  <span className="text-2xl font-medium">
+                    & Lifecycle Management
+                  </span>
+                </h1>
+                <div className="overflow-hidden transition-all duration-300 ease-in-out max-h-0 group-hover:max-h-screen">
+                  <p className="mt-4 font-medium text-black">
+                    We execute the strategic plan and manage the
+                    entire solution lifecycle, from
+                    implementation to optimization. This ensures
+                    the solutions are effectively integrated and
+                    continuously deliver value.
+                  </p>
+                  <ul className="pl-4 mt-2 font-medium text-black list-disc">
+                    <li>
+                      Implementation of the strategic plant
+                    </li>
+                    <li>Solution deployment and integration</li>
+                    <li>Lifecycle management and support</li>
+                    <li>
+                      Continuous performance evaluation and
+                      optimization
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div className="flex justify-center mt-4">
                 <svg
-                  className="mt-6"
+                  className="mb-4 transition-transform duration-300 rotate-180 group-hover:rotate-0 group-hover:mb-4"
                   width="59"
                   height="23"
                   viewBox="0 0 59 23"
@@ -279,7 +342,7 @@ const Homepage = () => {
                     strokeMiterlimit="10"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  ></path>
+                  />
                 </svg>
               </div>
             </div>
