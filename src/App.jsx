@@ -6,7 +6,7 @@ import {
   Navigate,
   useLocation,
 } from "react-router-dom";
-import { Homepage, AboutUs, Portfolio, Contact } from "./pages";
+import { Homepage, FaqSection, TermsAndPolicy } from "./pages";
 
 function App() {
   const ScrollToTop = () => {
@@ -25,9 +25,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Homepage />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/faqs" element={<FaqSection />} />
+        <Route path="/terms" element={<TermsAndPolicy />} />
       </Routes>
     </Router>
   );
