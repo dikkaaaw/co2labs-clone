@@ -63,7 +63,7 @@ const Homepage = () => {
             Our Services
           </h1>
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <div className="flex flex-col items-center justify-between mt-12 text-center bg-white p-7 rounded-xl h-96 w-72 lg:mt-10">
+            <div className="flex flex-col items-center justify-between mt-12 text-center bg-white p-7 rounded-xl h-96 w-72 sm:mt-0 md:mt-0 lg:mt-10">
               <div className="p-5 rounded-full bg-slate-100">
                 <svg
                   width="34"
@@ -188,8 +188,8 @@ const Homepage = () => {
       </section>
 
       {/* Methodology Section*/}
-      <section className="mt-32 lg:mt-10">
-        <div className="flex flex-col">
+      <section className="mt-32 lg:mt-10" id="methodology">
+        <div className="flex flex-col md:pt-24">
           <div className="text-center">
             <h1 className="mb-2 text-6xl font-bold font-orbitron">
               ACE
@@ -332,7 +332,7 @@ const Homepage = () => {
 
       {/* Our Team Section */}
       <section className="mt-72 lg:mt-6" id="ourTeam">
-        <div className="w-full px-16 md:pt-56 md:px-20">
+        <div className="w-full px-16 md:pt-28 md:px-20">
           <h1 className="text-5xl font-bold font-orbitron lg:ml-20">
             Our Team
           </h1>
@@ -425,7 +425,7 @@ const Homepage = () => {
       {/* Portfolio Section */}
       <section className="mt-72" id="portfolio">
         <div className="w-full bg-[#153147] p-16 pt-28">
-          <h1 className="px-20 mb-20 text-5xl font-bold text-white font-orbitron">
+          <h1 className="mb-20 text-5xl font-bold text-white lg:pl-20 font-orbitron">
             Our Portfolio
           </h1>
           <div className="flex flex-wrap lg:px-20 lg:justify-center md:gap-10 lg:gap-10">
@@ -528,7 +528,7 @@ const Homepage = () => {
       </section>
 
       {/* Contact Us Section */}
-      <section className="mt-72" id="contactUs">
+      <section className="mb-16 mt-72" id="contactUs">
         <div className="w-full px-10 py-14 lg:px-24">
           <div className="lg:items-center lg:flex lg:justify-between">
             <h1 className="text-5xl font-bold font-orbitron">
@@ -583,7 +583,7 @@ const Homepage = () => {
           </div>
           <div className="flex flex-col lg:gap-28 lg:flex lg:flex-row lg:justify-end">
             <div className="w-full p-8 bg-white shadow-lg lg:w-[980px] lg:px-22 lg:py-16 rounded-xl">
-              <h2 className="text-3xl font-semibold lg:text-2xl lg:mb-4">
+              <h2 className="mb-6 text-3xl font-semibold lg:text-2xl lg:mb-4">
                 Hi there, how can we help?
               </h2>
               <div className="flex flex-col gap-5">
@@ -599,15 +599,14 @@ const Homepage = () => {
                 />
                 <textarea
                   className="p-3 lg:p-4 placeholder:text-gray-400 lg:rounded-lg pl-8 font-medium border-none rounded-md bg-[#e5e7eb]"
-                  type="text"
                   placeholder="Ask Our About Services"
                 />
               </div>
               <h2 className="mt-6 mb-4 text-xl font-semibold">
                 Where Did You Hear About Us
               </h2>
-              <div className="flex flex-row gap-2 mb-2 font-medium">
-                <div className="flex items-center gap-4">
+              <div className="flex flex-wrap gap-4 mb-2 font-medium">
+                <div className="flex items-center gap-2">
                   <input
                     type="radio"
                     name="source"
@@ -615,7 +614,7 @@ const Homepage = () => {
                   />
                   <label htmlFor="linkedin">Linkedin</label>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2">
                   <input
                     type="radio"
                     name="source"
@@ -623,7 +622,7 @@ const Homepage = () => {
                   />
                   <label htmlFor="instagram">Instagram</label>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2">
                   <input
                     type="radio"
                     name="source"
@@ -631,9 +630,7 @@ const Homepage = () => {
                   />
                   <label htmlFor="job-ads">Job Ads</label>
                 </div>
-              </div>
-              <div className="flex flex-row gap-4 mb-3 font-medium">
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2">
                   <input
                     type="radio"
                     name="source"
@@ -643,12 +640,12 @@ const Homepage = () => {
                     Events and Seminars
                   </label>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2">
                   <input type="radio" name="source" id="other" />
                   <label htmlFor="other">Other</label>
                 </div>
               </div>
-              <button className="bg-[#153147] text-white px-6 py-2 rounded-lg">
+              <button className="bg-[#153147] mt-2 text-white px-6 py-2 rounded-lg">
                 Send
               </button>
             </div>
@@ -656,7 +653,7 @@ const Homepage = () => {
               <iframe
                 className="w-full mt-10 h-54 lg:mt-0 lg:h-full"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.830157018!2d103.79885887496565!3d1.275217898712663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1b27c7a1b85f%3A0xd6085c5205635a1c!2sCoding%20Collective!5e0!3m2!1sen!2sid!4v1727603797348!5m2!1sen!2sid"
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
               ></iframe>
             </div>
