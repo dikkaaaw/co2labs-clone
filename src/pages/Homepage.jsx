@@ -2,6 +2,14 @@ import Navbar from "../components/Navbar";
 import heroImg from "../assets/heroimg.png";
 import backdropImg from "../assets/backdrop.png";
 import aboutUsImg from "../assets/about-img.png";
+import profileImg1 from "../assets/profile1.jpeg";
+import profileImg2 from "../assets/profile2.jpeg";
+import profileImg3 from "../assets/profile3.jpeg";
+import portfolioImg1 from "../assets/portfolio.png";
+import portfolioImg2 from "../assets/portfolio-1.png";
+import portfolioImg3 from "../assets/portfolio-2.png";
+import portfolioImg4 from "../assets/portfolio-3.png";
+import portfolioImg5 from "../assets/portfolio-4.png";
 
 const Homepage = () => {
   return (
@@ -320,6 +328,206 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+
+      {/* Our Team Section */}
+      <section className="mt-72 lg:mt-6" id="ourTeam">
+        <div className="w-full px-16 md:pt-56 md:px-20">
+          <h1 className="text-5xl font-bold font-orbitron lg:ml-20">
+            Our Team
+          </h1>
+          <div className="flex flex-col gap-10 mt-24 lg:justify-center lg:gap-6 lg:flex-row lg:mt-44">
+            <div className="flex flex-col items-center gap-4 lg:bg-white lg:w-[400px] lg:justify-center lg:p-10 lg:rounded-xl lg:shadow-lg lg:hover:scale-110 lg:transition-transform lg:duration-150">
+              <img
+                className="rounded-full shadow-lg w-52 lg:mt-[-180px]"
+                src={profileImg1}
+                alt="Profile Image 1"
+              />
+              <div className="text-center">
+                <h1 className="text-2xl font-bold">Jay Chen</h1>
+                <h2 className="mb-2 font-semibold">CEO</h2>
+                <p className="text-sm italic font-medium">
+                  Jay began his career in the banking and finance
+                  sector, where he honed his skills and developed
+                  a deep understanding of the industry.
+                  Leveraging this foundation, he expanded into HR
+                  operations and outsourcing, successfully
+                  growing his businesses by delivering
+                  exceptional service to renowned international
+                  brands like Huawei, Coca-Cola, and
+                  GlaxoSmithKline. CO2 Labs provides a solutions
+                  based approach to champion human resource and
+                  outsourcing through strategic consultation and
+                  meticulously planned placements.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center gap-4 lg:bg-white lg:w-[400px] lg:p-10 lg:rounded-xl lg:shadow-lg lg:hover:scale-110 lg:transition-transform lg:duration-150">
+              <img
+                className="rounded-full shadow-lg w-52 lg:mt-[-150px]"
+                src={profileImg2}
+                alt="Profile Image 1"
+              />
+              <div className="text-center">
+                <h1 className="text-2xl font-bold">Alune</h1>
+                <h2 className="mb-2 font-semibold">
+                  Development Project Manager
+                </h2>
+                <p className="text-sm italic font-medium">
+                  With a background in IT software development,
+                  quality testing and web design, she brings a
+                  deep understanding of the technical and
+                  strategic aspects of project management. Known
+                  for her meticulous planning, effective
+                  communication, and ability to navigate
+                  challenges, she has consistently delivered
+                  high-quality software solutions on time and
+                  within budget. Alune excels at fostering
+                  collaboration across cross-functional teams,
+                  ensuring that projects align with client
+                  objectives and business goals. Her dedication
+                  to excellence and passion for innovation make
+                  her a driving force behind the success of every
+                  project she leads.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center gap-4 lg:bg-white lg:w-[400px] lg:p-10 lg:rounded-xl lg:shadow-lg lg:hover:scale-110 lg:transition-transform lg:duration-150">
+              <img
+                className="rounded-full shadow-lg w-52 lg:mt-[-150px]"
+                src={profileImg3}
+                alt="Profile Image 1"
+              />
+              <div className="text-center">
+                <h1 className="text-2xl font-bold">Ron</h1>
+                <h2 className="mb-2 font-semibold">
+                  Business Development Lead
+                </h2>
+                <p className="text-sm italic font-medium">
+                  With a strong background in business
+                  development for finance, logistics and real
+                  estate industries, Ron has successfully led
+                  initiatives that have expanded market reach and
+                  increased revenue for both emerging and
+                  established companies. Known for his ability to
+                  identify new opportunities and forge lasting
+                  relationships, Ron excels in creating tailored
+                  solutions that meet client needs and align with
+                  business goals through thoughtful solutioning.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section className="mt-72" id="portfolio">
+        <div className="w-full bg-[#153147] p-16 pt-28">
+          <h1 className="px-20 mb-20 text-5xl font-bold text-white font-orbitron">
+            Our Portfolio
+          </h1>
+          <div className="flex flex-wrap lg:px-20 lg:justify-center md:gap-10 lg:gap-10">
+            <a
+              href="https://aotc.sg/"
+              className="flex flex-col overflow-hidden"
+            >
+              <div className="overflow-hidden w-96 lg:w-[280px] group rounded-xl">
+                <img
+                  className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105 rounded-xl"
+                  src={portfolioImg1}
+                  alt="Portfolio 1"
+                />
+              </div>
+              <a
+                href="https://aotc.sg/"
+                className="mt-4 mb-6 text-xl font-semibold text-white cursor-pointer"
+              >
+                AOTC Cosmetics
+              </a>
+            </a>
+            <a
+              href="https://noshkitchen.com.sg/"
+              className="flex flex-col overflow-hidden"
+            >
+              <div className="overflow-hidden w-96 lg:w-[280px] group rounded-xl">
+                <img
+                  className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105 rounded-xl"
+                  src={portfolioImg2}
+                  alt="Portfolio 1"
+                />
+              </div>
+              <a
+                href="https://noshkitchen.com.sg/"
+                className="mt-4 mb-6 text-xl font-semibold text-white cursor-pointer"
+              >
+                Nosh Kitchen Website
+              </a>
+            </a>
+            <a
+              href="https://micelah.com/"
+              className="flex flex-col overflow-hidden"
+            >
+              <div className="overflow-hidden w-96 lg:w-[280px] group rounded-xl">
+                <img
+                  className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105 rounded-xl"
+                  src={portfolioImg3}
+                  alt="Portfolio 1"
+                />
+              </div>
+              <a
+                href="https://micelah.com/"
+                className="mt-4 mb-6 text-xl font-semibold text-white cursor-pointer"
+              >
+                Michelah Event Organizer{" "}
+                <span className="text-xl lg:block lg:mt-2">
+                  Singapore
+                </span>
+              </a>
+            </a>
+
+            <a
+              href="https://pianistprodigy.com/"
+              className="flex flex-col overflow-hidden"
+            >
+              <div className="overflow-hidden w-96 lg:w-[280px] group rounded-xl">
+                <img
+                  className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105 rounded-xl"
+                  src={portfolioImg4}
+                  alt="Portfolio 1"
+                />
+              </div>
+              <a
+                href="https://pianistprodigy.com/"
+                className="mt-4 mb-6 text-xl font-semibold text-white cursor-pointer"
+              >
+                Joywaltzstudio Academy
+              </a>
+            </a>
+            <a
+              href="https://octopay.asia/"
+              className="flex flex-col overflow-hidden"
+            >
+              <div className="overflow-hidden w-96 lg:w-[280px] group rounded-xl">
+                <img
+                  className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105 rounded-xl"
+                  src={portfolioImg5}
+                  alt="Portfolio 1"
+                />
+              </div>
+              <a
+                href="https://octopay.asia/"
+                className="mt-4 mb-6 text-xl font-semibold text-white cursor-pointer"
+              >
+                Octopay Payment
+              </a>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Us Section */}
+      <section className="mt-72" id="contactUs"></section>
     </>
   );
 };
